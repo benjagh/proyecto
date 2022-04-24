@@ -1,34 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>archivo de prueba</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
-    <body>
-        <h1>hola mundo prueba</h1>
-        <div class="alert alert-primary" role="alert">
-            A simple primary alert—check it out!
-          </div>
-          <div class="alert alert-secondary" role="alert">
-            A simple secondary alert—check it out!
-          </div>
-          <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-          </div>
-          <div class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
-          </div>
-          <div class="alert alert-warning" role="alert">
-            A simple warning alert—check it out!
-          </div>
-          <div class="alert alert-info" role="alert">
-            A simple info alert—check it out!
-          </div>
-          <div class="alert alert-light" role="alert">
-            A simple light alert—check it out!
-          </div>
-          <div class="alert alert-dark" role="alert">
-            A simple dark alert—check it out!
-          </div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKING APP</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/icono.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <section class="container">
+        
+        <div class="video-container">
+          
+          <video src="video/output.mp4" autoplay muted loop ></video>
+        </div>
+        <div class="contenedor head">
+            <div id="logo">
+                <img src="img/logo.png">
+            </div>
+            <h1 class="titulo">PARKING APP</h1>
+            <p class="copy">La nueva forma de encontrar estacionamiento.</p>
+        </div>
+        
+      </section>
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="Login.html">Inicia sesión/Regístrate</a>
+                <a href="#inicio">¿Quiénes somos?</a>
+                <a href="#servicio">Nuestro proyecto</a>
+                <a href="#galeria">Estacionamientos</a>
+                <a href="#expertos">Contacto</a>
+                
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">¿Quiénes somos?</h1>
+            <p class="copy">Como equipo de PARKING APP, Nuestra forma de trabajo se basa en que nuestros clientes, ya sean arrendatarios o arrendadores puedan tener la mejor experiencia de uso y con una colaboración de ambas partes. </p>
+            
+        </div>
+        
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro proyecto</h2>
+            <div class="contenedor-servicio">
+                <img src="img/park.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Búsqueda eficaz</h3>
+                        <p> Nuestro servicio filtra estacionamientos disponibles en base a los diferentes lugares desplegados a nivel país en donde se encuentren personas en calidad de arrendadores.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Optimización de tiempos</h3>
+                        <p> Seleccionar un estacionamiento dentro de nuestro catálogo favorecerá a optimizar el tiempo de nuestros clientes, debido al creciente aumento en la demanda de estacionamientos lo que las personas buscan es lograr dar con la disponibilidad de estos mismos.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Convenios</h3>
+                        <p> Disponemos de un convenio con diferentes arrendadores a nivel país, lo que favorece el uso por parte de nuestros usuarios en la plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Estacionamientos</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/dos.jpg" class="img-galeria" alt="">
+                    <img src="img/tres.jpg" class="img-galeria" alt="">
+                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
+                    <img src="img/cinco.jpg" class="img-galeria" alt="">
+                    <img src="img/seis.png" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Contacto:</h2>
+            <form action="index.html" class="contacto">
+                <div class="section">
+                
+                    <label for="guestname" class="field prepend-icon">
+                      <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Nombre">
+                      <span class="field-icon"><i class="fa fa-user"></i></span>  
+                    </label>
+                  </div>
+                  
+                                
+                  <div class="frm-row">
+                    <div class="section colm colm6">
+            
+                      <label for="guestemail" class="field prepend-icon">
+                        <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="Correo">
+                        <span class="field-icon"><i class="fa fa-envelope"></i></span>  
+                      </label>
+                    </div>
+                    
+                    <div class="section colm colm6">
+                      <label for="guestelephone" class="field prepend-icon">
+                        <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Número de télefono">
+                        <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
+                      </label>
+                    </div>
+                  </div>
+                  <br>
+                  <button class="Formbutton" href="bienvenido.html">
+                    Enviar
+                  </button>
+              </form> 
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">© 2022 PARKING APP, Inc.</h2>
+                    <p>Soluciones al instante</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
 </html>

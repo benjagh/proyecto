@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKING APP - Bienvenido</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/icono.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="index.html">Cerrar sesión</a>
+                <a href="#galeria">Estacionamientos</a>
+                <a href="#reservas">Reservas</a>
+                
+        </nav>
+        
+    
+    <main>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <div id="logo">
+                    <br>
+                    <img src="img/logo.png">
+                </div>
+               
+                    
+                <h2 class="subtitulo">Estacionamientos disponibles en tu zona:</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/dos.jpg" class="img-galeria" alt="">
+                    <img src="img/tres.jpg" class="img-galeria" alt="">
+                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
+                    <img src="img/cinco.jpg" class="img-galeria" alt="">
+                    <img src="img/seis.png" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <br>
+        <br>
+
+        <form id="reservas">
+            <h2 class="subtitulo2">Haz tu reserva:</h2>
+            <div class="section">
+                
+                <label for="guestname" class="field prepend-icon">
+                  <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Nombre">
+                  <span class="field-icon"><i class="fa fa-user"></i></span>  
+                </label>
+              </div>
+                            
+              <div class="frm-row">
+                <div class="section colm colm6">
+        
+                  <label for="guestemail" class="field prepend-icon">
+                    <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="Correo">
+                    <span class="field-icon"><i class="fa fa-envelope"></i></span>  
+                  </label>
+                </div>
+                
+                <div class="section colm colm6">
+                  <label for="guestelephone" class="field prepend-icon">
+                    <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Número de télefono">
+                    <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
+                  </label>
+                </div>
+              </div>
+               
+              <div class="frm-row">
+                <label for="guestname" class="field prepend-icon">
+                  <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Patente">
+                  <span class="field-icon"><i class="fa fa-user"></i></span>  
+                </label>
+              </div>
+      
+                
+                <div class="section colm colm6">
+        
+                    <label for="guestname" class="field prepend-icon">
+                      <select name="Estacionamiento">
+
+                        <option>Estacionamiento 1</option>
+                        <option>Estacionamiento 2</option>
+                        <option>Estacionamiento 3</option>
+                        <option>Estacionamiento 4</option>
+                        <option>Estacionamiento 5</option>
+                        <option selected>Estacionamiento 6</option>
+                        
+                        </select>
+                        <span class="field-icon"><i class="fa fa-user"></i></span>  
+                      </label>
+                    </div>
+              </div>
+              <select name="Jornada" required="">
+
+                <option>Por hora</option>
+                
+                <option>Por media jornada</option>
+                
+                <option selected>Por jornada completa</option>
+                
+                </select>
+              <div class="frm-row">
+                <div class="section colm colm6">
+                  
+                  <label for="checkin" class="field prepend-icon">
+                    <input type="datetime-local" value="2022-04-21T10:00">
+                    <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+                  </label>
+                </div>
+              </div>
+              
+              <div class="spacer-t20 spacer-b30">
+                <div class="tagline"><span>Por favor, complete el formulario</span></div>
+              </div>
+              <br>
+              
+              <div class="frm-row">
+                <div class="option-group field">
+                
+                  <div class="section colm colm6">
+                    <label class="switch">
+                      <input type="checkbox" name="switch1" id="switch1" value="switch1">
+                      <span class="switch-label" data-on="YES" data-off="NO"></span>
+                      <span>He leído las condiciones al servicio</span>
+                      <br>
+                      <a href="orden.html">
+                        <button>Enviar</button>
+                    </a>
+                      <br>
+                      <br>
+                    </label>
+                  </div>
+                            
+                </div>
+              </div>
+               
+               
+               
+            
+            
+        </form>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">© 2022 PARKING APP, Inc.</h2>
+                    <p>Soluciones al instante</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/reserva.js"></script>
+</body>
+</html>
